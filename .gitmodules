@@ -1,0 +1,3 @@
+[submodule "sdk/USB104A7-dpmutil/src/dpmutil"]
+	path = sdk/USB104A7-dpmutil/src/dpmutil
+	url = https://github.com/digilent/dpmutil
