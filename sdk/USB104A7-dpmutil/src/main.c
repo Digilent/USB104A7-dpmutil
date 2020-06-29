@@ -302,7 +302,7 @@ BOOL getLine(){
 			return fTrue;
 		}
 		//Acceptable characters
-		else if((tolower(chUartMsg[iCmdChar])>'a' && tolower(chUartMsg[iCmdChar])<'z') ||
+		else if((tolower(chUartMsg[iCmdChar])>='a' && tolower(chUartMsg[iCmdChar])<='z') ||
 				(chUartMsg[iCmdChar]>'0' && chUartMsg[iCmdChar]<'9') ||
 				chUartMsg[iCmdChar]=='-' || chUartMsg[iCmdChar] == '?'|| chUartMsg[iCmdChar] == ' '){
 			xil_printf("%c", chUartMsg[iCmdChar]);
@@ -519,15 +519,23 @@ int parseArguments(){
 
 			switch ( arg[0] ) {
 				case '1':
+				case 'a':
+				case 'A':
 					flags.fanid = 0;
 					break;
 				case '2':
+				case 'b':
+				case 'B':
 					flags.fanid = 1;
 					break;
 				case '3':
+				case 'c':
+				case 'C':
 					flags.fanid = 2;
 					break;
 				case '4':
+				case 'd':
+				case 'D':
 					flags.fanid = 3;
 					break;
 				default:
