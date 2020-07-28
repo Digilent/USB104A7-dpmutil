@@ -1,3 +1,6 @@
 [submodule "sdk/USB104A7-dpmutil/src/dpmutil"]
 	path = sdk/USB104A7-dpmutil/src/dpmutil
 	url = https://github.com/digilent/dpmutil
+[submodule "digilent-vivado-scripts"]
+	path = digilent-vivado-scripts
+	url = https://github.com/Digilent/digilent-vivado-scripts
